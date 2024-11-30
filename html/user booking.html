@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Royal Hotel</title>
+    <link rel="icon" href="../img/logo-3.png" type="Image/icon ttype">
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"name="viewport"/>
+    <!-- Fonts and icons -->
+    <script src="../js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/userbootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../css/kaiuser.css"> -->
+    <link rel="stylesheet" href="../css/user.min.css">
+     <!-- Customized Bootstrap Stylesheet -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="./userdash.html" class="logo">
+              <img
+                src="../img/logo-2.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item active">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false">
+                  <i class="fas fa-home"></i>
+                  <p>Dashboard</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="./userdash.html">
+                        <span class="sub-item">Dashboard 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">universal</h4>
+              </li>
+              <li class="nav-item">
+                <a href="./my booking.html">
+                  <i class="fas fa-bed"></i> 
+                  <p>My Bookings</p>
+                </a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="../html/new booking.html">
+                  <i class="fas fa-calendar-plus"></i>
+                  <p>New Booking</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./my event .html">
+                  <i class="fas fa-calendar-alt"></i>
+                  <p>Event</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./my activity.html">
+                  <i class="fas fa-user-check"></i> 
+                  <p>Activity</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./payment.html">
+                  <i class="fas fa-credit-card"></i> 
+                  <p>Payments</p>
+                </a>
+              </li>
+            
+                <div class="collapse" id="submenu">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a data-bs-toggle="collapse" href="#subnav1">
+                        <span class="sub-item">Level 1</span>
+                        <span class="caret"></span>
+                      </a>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+            <div class="container-fluid">
+              <nav
+                class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+              >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-search pe-1">
+                      <i class="fa fa-search search-icon"></i>
+                    </button>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search ..."
+                    class="form-control"
+                  />
+                </div>
+              </nav>
+
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li
+                  class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+                >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-search animated fadeIn">
+                    <form class="navbar-left navbar-form nav-search">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Search ..."
+                          class="form-control"
+                        />
+                      </div>
+                    </form>
+                  </ul>
+                </li>
+               
+
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a
+                    class="dropdown-toggle profile-pic"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <div class="avatar-sm">
+                      <img
+                        src="../img/2.jpg"
+                        alt="..."
+                        class="avatar-img rounded-circle"
+                      />
+                    </div>
+                    <span class="profile-username">
+                      <span class="op-7">Hi,</span>
+                      <span class="fw-bold">Karthikeyan</span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="avatar-lg">
+                            <img
+                            src="../img/2.jpg"
+                              alt="image profile"
+                              class="avatar-img rounded"
+                            />
+                          </div>
+                          <div class="u-text">
+                            <h4>Karthikeyan</h4>
+                            <p class="text-muted">Karthikeyan</p>
+                            <a
+                              href="./userprofile.html"
+                              class="btn btn-xs btn-secondary btn-sm"
+                              >View Profile</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                       
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../index.html">Logout</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header">
+              <h3 class="fw-bold mb-3">Booking</h3>
+              <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                  <a href="./">
+                    <i class="icon-home"></i>
+                  </a>
+                </li>
+               
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">New Booking</a>
+                </li>
+              </ul>
+            </div>
+    </div>
+
+<!-- Booking Start -->
+<div class="container-xxl py-5">
+    <div class="container" style="margin-top: -50px;">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="../img/lux-1.jpgg.jpg" style="margin-top: 25%;">
+                    </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="../img/lux-4.jpg" style="height: 100%;">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="../img/lux-3.jpg">
+                    </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="../img/lux-2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <!-- Form with redirection on submit -->
+                    <form id="booking-form" action="payment.html" method="POST" novalidate>
+                        <div class="row g-3">
+                            <!-- Name field -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Email field -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <label for="email">Your Email</label>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+
+                            <!-- Check-In Date field -->
+                            <div class="col-md-6">
+                                <div class="form-floating date" id="date3" data-target-input="nearest">
+                                    <input type="date" class="form-control" id="checkin" name="checkin" placeholder="Check In" required>
+                                    <label for="checkin">Check In</label>
+                                    <div class="invalid-feedback">Please select a check-in date.</div>
+                                </div>
+                            </div>
+
+                            <!-- Check-Out Date field -->
+                            <div class="col-md-6">
+                                <div class="form-floating date" id="date4" data-target-input="nearest">
+                                    <input type="date" class="form-control" id="checkout" name="checkout" placeholder="Check Out" required>
+                                    <label for="checkout">Check Out</label>
+                                    <div class="invalid-feedback">Please select a check-out date.</div>
+                                </div>
+                            </div>
+
+                            <!-- Adults selection field -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="select1" name="adults" required>
+                                      <option value="">Select Adult</option>
+                                      <option value="1">1 Adult</option>
+                                      <option value="2">2 Adults</option>
+                                      <option value="3">3 Adults</option>
+                                    </select>
+                                    <label for="select1">Select Adult</label>
+                                    <div class="invalid-feedback">Please select the number of adults.</div>
+                                </div>
+                            </div>
+
+                            <!-- Children selection field -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="select2" name="children">
+                                      <option value="0">No Children</option>
+                                      <option value="1">1 Child</option>
+                                      <option value="2">2 Children</option>
+                                      <option value="3">3 Children</option>
+                                    </select>
+                                    <label for="select2">Select Children</label>
+                                </div>
+                            </div>
+
+                            <!-- Room selection field -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="select3" name="room" required>
+                                      <option value="">Select A Room</option>
+                                      <option value="1">Room 1</option>
+                                      <option value="2">Room 2</option>
+                                      <option value="3">Room 3</option>
+                                    </select>
+                                    <label for="select3">Select A Room</label>
+                                    <div class="invalid-feedback">Please select a room.</div>
+                                </div>
+                            </div>
+
+                            <!-- Special Request textarea -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Special Request" id="message" name="special_request" style="height: 100px"></textarea>
+                                    <label for="message">Special Request</label>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="col-12">
+                                <button class="btn w-100 py-3" type="submit" style="background-color: #FEA116; border-color: #FEA116; color: white;">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Form Ends -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Booking End -->
+
+<script>
+    // Enable Bootstrap validation styles on form submission
+    (function () {
+        'use strict'
+
+        // Fetch all forms we want to apply validation styles to
+        var forms = document.querySelectorAll('form')
+
+        // Loop over them and prevent submission if fields are invalid
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        // Redirect to payment.html when form is valid
+                        event.preventDefault(); // Prevent default form submission
+                        window.location.href = "payment.html"; // Redirect to payment.html
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
+
+
+
+
+
+
+    <!--   Core JS Files   -->
+       <!--   Core JS Files   -->
+       <script src="../js/core/jquery-3.7.1.min.js"></script>
+       <script src="../js/core/userpopper.min.js"></script>
+       <script src="../js/core/user bootstrap.min.js"></script>
+   
+       <!-- jQuery Scrollbar -->
+       <script src="../js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+   
+       <!-- Kaiadmin JS -->
+       <script src="../js/user.min.js"></script>
+   
+  </body>
+</html>

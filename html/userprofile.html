@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Royal Hotel</title>
+    <link rel="icon" href="../img/logo-3.png" type="Image/icon ttype">
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"name="viewport"/>
+    <!-- Fonts and icons -->
+    <script src="../js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/userbootstrap.min.css">
+    <link rel="stylesheet" href="../css/kaiuser.css">
+    <link rel="stylesheet" href="../css/user.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="./userdash.html" class="logo">
+              <img
+                src="../img/logo-2.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+            <div class="sidebar-content">
+              <ul class="nav nav-secondary">
+                <li class="nav-item active">
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#dashboard"
+                    class="collapsed"
+                    aria-expanded="false">
+                    <i class="fas fa-home"></i>
+                    <p>Dashboard</p>
+                    <span class="caret"></span>
+                  </a>
+                  <div class="collapse" id="dashboard">
+                    <ul class="nav nav-collapse">
+                      <li>
+                        <a href="./userdash.html">
+                          <span class="sub-item">Dashboard 1</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-section">
+                  <span class="sidebar-mini-icon">
+                    <i class="fa fa-ellipsis-h"></i>
+                  </span>
+                  <h4 class="text-section">universal</h4>
+                </li>
+                <li class="nav-item">
+                  <a href="./my booking.html">
+                    <i class="fas fa-bed"></i> 
+                    <p>My Bookings</p>
+                  </a>
+                </li>
+              
+                <li class="nav-item">
+                  <a href="../../documentation/index.html">
+                    <i class="fas fa-calendar-plus"></i>
+                    <p>New Booking</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./my event .html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>Event</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./my activity.html">
+                    <i class="fas fa-user-check"></i> 
+                    <p>Activity</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./payment.html">
+                    <i class="fas fa-credit-card"></i> 
+                    <p>Payments</p>
+                  </a>
+                </li>
+              
+                  <div class="collapse" id="submenu">
+                    <ul class="nav nav-collapse">
+                      <li>
+                        <a data-bs-toggle="collapse" href="#subnav1">
+                          <span class="sub-item">Level 1</span>
+                          <span class="caret"></span>
+                        </a>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+  
+        <div class="main-panel">
+          <div class="main-header">
+            <div class="main-header-logo">
+              <!-- Logo Header -->
+              <div class="logo-header" data-background-color="dark">
+                <a href="index.html" class="logo">
+                  <img
+                    src="assets/img/kaiadmin/logo_light.svg"
+                    alt="navbar brand"
+                    class="navbar-brand"
+                    height="20"
+                  />
+                </a>
+                <div class="nav-toggle">
+                  <button class="btn btn-toggle toggle-sidebar">
+                    <i class="gg-menu-right"></i>
+                  </button>
+                  <button class="btn btn-toggle sidenav-toggler">
+                    <i class="gg-menu-left"></i>
+                  </button>
+                </div>
+                <button class="topbar-toggler more">
+                  <i class="gg-more-vertical-alt"></i>
+                </button>
+              </div>
+              <!-- End Logo Header -->
+            </div>
+            <!-- Navbar Header -->
+            <nav
+              class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+            >
+              <div class="container-fluid">
+                <nav
+                  class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+                >
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button type="submit" class="btn btn-search pe-1">
+                        <i class="fa fa-search search-icon"></i>
+                      </button>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Search ..."
+                      class="form-control"
+                    />
+                  </div>
+                </nav>
+  
+                <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                  <li
+                    class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-search animated fadeIn">
+                      <form class="navbar-left navbar-form nav-search">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            placeholder="Search ..."
+                            class="form-control"
+                          />
+                        </div>
+                      </form>
+                    </ul>
+                  </li>
+                 
+  
+                  <li class="nav-item topbar-user dropdown hidden-caret">
+                    <a
+                      class="dropdown-toggle profile-pic"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      aria-expanded="false"
+                    >
+                      <div class="avatar-sm">
+                        <img
+                          src="../img/2.jpg"
+                          alt="..."
+                          class="avatar-img rounded-circle"
+                        />
+                      </div>
+                      <span class="profile-username">
+                        <span class="op-7">Hi,</span>
+                        <span class="fw-bold">Karthikeyan</span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user animated fadeIn">
+                      <div class="dropdown-user-scroll scrollbar-outer">
+                        <li>
+                          <div class="user-box">
+                            <div class="avatar-lg">
+                              <img
+                              src="../img/2.jpg"
+                                alt="image profile"
+                                class="avatar-img rounded"
+                              />
+                            </div>
+                            <div class="u-text">
+                              <h4>Karthikeyan</h4>
+                              <p class="text-muted">Karthikeyan</p>
+                              <a
+                                href="./userprofile.html"
+                                class="btn btn-xs btn-secondary btn-sm"
+                                >View Profile</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">My Profile</a>
+                         
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header">
+              <h3 class="fw-bold mb-3">Profile</h3>
+              <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                  <a href="./">
+                    <i class="icon-home"></i>
+                  </a>
+                </li>
+               
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Profile</a>
+                </li>
+              </ul>
+            </div>
+    </div>
+    
+
+             <!-- prifile -->
+
+             <div class="profile-container" style=" border-radius: 12px; box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); margin-top: -20px;">
+                <!-- Profile Header -->
+                <div class="profile-header">
+                    <img src="../img/2.jpg" alt="Profile Picture">
+                    <h2>ミ★ Karthikeyan ★彡</h2>
+
+                    <p>Perambalur Highway , Ariyalur, Tamilnadu. Landmark : Ultratech Ciment Factory</p>
+                </div>
+        
+                <!-- Profile Info -->
+                <div class="profile-info">
+                    <div>
+                        <h3>22</h3>
+                        <p>Age</p>
+                    </div>
+                    <div>
+                        <h3>90%</h3>
+                        <p>Profile Completion</p>
+                    </div>
+                    <div>
+                        <h3>May 2023</h3>
+                        <p>Join Date</p>
+                    </div>
+                </div>
+        
+                <!-- Profile Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" value="Jana Novakova" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email Id</label>
+                        <input type="email" id="email" value="jana-novakova@gmail.com" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" value="0185419635" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" value="34" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="profilePicture">Profile Picture</label>
+                        <input type="file" id="profilePicture">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="address1">Address Line 1</label>
+                        <input type="text" id="address1" value="28800 Orchard Lake Road" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="address2">Address Line 2</label>
+                        <input type="text" id="address2" value="Suite 180 Farmington Hills, U.S.A" required>
+                    </div>
+        
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+            </div>
+        
+
+        
+
+    <!--   Core JS Files   -->
+       <!--   Core JS Files   -->
+       <script src="../js/core/jquery-3.7.1.min.js"></script>
+       <script src="../js/core/userpopper.min.js"></script>
+       <script src="../js/core/user bootstrap.min.js"></script>
+   
+       <!-- jQuery Scrollbar -->
+       <script src="../js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+   
+       <!-- Kaiadmin JS -->
+       <script src="../js/user.min.js"></script>
+   
+  </body>
+</html>

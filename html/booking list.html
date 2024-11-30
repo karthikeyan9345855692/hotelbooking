@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Royal Hotel</title>
+    <link rel="icon" href="../img/logo-3.png" type="Image/icon ttype">
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"name="viewport"/>
+    <!-- Fonts and icons -->
+    <script src="../js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/adminbootstrap.min.css" />
+    <link rel="stylesheet" href="../css/plugins.min.css" />
+    <link rel="stylesheet" href="../css/kaiadmin.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="./admindash.html" class="logo">
+              <img
+                src="../img/logo-2.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item active">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false">
+                  <i class="fas fa-home"></i>
+                  <p>Dashboard</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="./admindash.html">
+                        <span class="sub-item">Dashboard 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">universal</h4>
+              </li>
+              <li class="nav-item">
+                <a href="../html/transaction.html">
+                  <i class="fas fa-exchange-alt"></i>
+                  <p>Transaction</p>
+                </a>
+              </li>
+             
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <i class="fas fa-hotel"></i>
+                  <p>Room Book</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="sidebarLayouts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../html/booking list.html">
+                        <span class="sub-item">Booking List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/room status.html">
+                        <span class="sub-item">Room Status</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#base">
+                  <i class="fas fa-crown"></i>
+                  <p>Room Facilities</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="base">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../html/facilities list.html">
+                        <span class="sub-item">Facilities List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/facilities details.html">
+                        <span class="sub-item">Facilities Details</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/room size.html">
+                        <span class="sub-item">Room Size</span>
+                      </a>
+                    </li>
+                  
+                  </ul>
+                </div>
+              </li>
+             
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#tables">
+                  <i class="fas fa-broom"></i>
+                  <p>House Keeping</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="tables">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../html/room cleaning.html">
+                        <span class="sub-item">Room Cleaning</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/housekeeping checklist.html">
+                        <span class="sub-item">Checklist</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/cleaning report.html">
+                        <span class="sub-item">Cleaning Report</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#charts">
+                  <i class='fas fa-car'></i>
+                  <p>Cab Facilities</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="charts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../html/cab list.html">
+                        <span class="sub-item">Cab List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/cab booking.html">
+                        <span class="sub-item">Cab Booking</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Reports</h4>
+              </li>
+              <li class="nav-item">
+                <a href="../html/booking report.html">
+                  <i class="fas fa-hotel"></i>
+                  <p>Booking Reports</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/purchase report.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p>Purchase Reports</p>
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#submenu">
+                  <i class="fas fa-bars"></i>
+                  <p>Menu Levels</p>
+                  <span class="caret"></span>
+                </a> -->
+                <div class="collapse" id="submenu">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a data-bs-toggle="collapse" href="#subnav1">
+                        <span class="sub-item">Level 1</span>
+                        <span class="caret"></span>
+                      </a>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+            <div class="container-fluid">
+              <nav
+                class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+              >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-search pe-1">
+                      <i class="fa fa-search search-icon"></i>
+                    </button>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search ..."
+                    class="form-control"
+                  />
+                </div>
+              </nav>
+
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li
+                  class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+                >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-search animated fadeIn">
+                    <form class="navbar-left navbar-form nav-search">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Search ..."
+                          class="form-control"
+                        />
+                      </div>
+                    </form>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="messageDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu messages-notif-box animated fadeIn"
+                    aria-labelledby="messageDropdown"
+                  >
+                    <li>
+                      <div
+                        class="dropdown-title d-flex justify-content-between align-items-center"
+                      >
+                        Messages
+                        <a href="#" class="small">Mark all as read</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="message-notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../img/jm_denis.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Ajith</span>
+                              <span class="block"> How are you ? </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../img/chadengle.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Vijay</span>
+                              <span class="block"> Ok, Thanks ! </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../img/mlane.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Siva</span>
+                              <span class="block">
+                                Ready for the meeting today...
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);"
+                        >See all messages<i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="notifDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-bell"></i>
+                    <span class="notification">4</span>
+                  </a>
+                  <ul
+                    class="dropdown-menu notif-box animated fadeIn"
+                    aria-labelledby="notifDropdown"
+                  >
+                    <li>
+                      <div class="dropdown-title">
+                        You have 4 new notification
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-icon notif-primary">
+                              <i class="fa fa-user-plus"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> New user registered </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-success">
+                              <i class="fa fa-comment"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block">
+                                Rahmad commented on Admin
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../img/profile2.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="block">
+                                Reza send messages to you
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-danger">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Farrah liked Admin </span>
+                              <span class="time">17 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);"
+                        >See all notifications<i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-layer-group"></i>
+                  </a>
+                  <div class="dropdown-menu quick-actions animated fadeIn">
+                    <div class="quick-actions-header">
+                      <span class="title mb-1">Quick Actions</span>
+                      <span class="subtitle op-7">Shortcuts</span>
+                    </div>
+                    <div class="quick-actions-scroll scrollbar-outer">
+                      <div class="quick-actions-items">
+                        <div class="row m-0">
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div class="avatar-item bg-danger rounded-circle">
+                                <i class="far fa-calendar-alt"></i>
+                              </div>
+                              <span class="text">Calendar</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-warning rounded-circle"
+                              >
+                                <i class="fas fa-map"></i>
+                              </div>
+                              <span class="text">Maps</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div class="avatar-item bg-info rounded-circle">
+                                <i class="fas fa-file-excel"></i>
+                              </div>
+                              <span class="text">Reports</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-success rounded-circle"
+                              >
+                                <i class="fas fa-envelope"></i>
+                              </div>
+                              <span class="text">Emails</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-primary rounded-circle"
+                              >
+                                <i class="fas fa-file-invoice-dollar"></i>
+                              </div>
+                              <span class="text">Invoice</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-secondary rounded-circle"
+                              >
+                                <i class="fas fa-credit-card"></i>
+                              </div>
+                              <span class="text">Payments</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a
+                    class="dropdown-toggle profile-pic"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <div class="avatar-sm">
+                      <img
+                        src="../img/1.jpg"
+                        alt="..."
+                        class="avatar-img rounded-circle"
+                      />
+                    </div>
+                    <span class="profile-username">
+                      <span class="op-7">Hi,</span>
+                      <span class="fw-bold">Karthikeyan</span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="avatar-lg">
+                            <img
+                              src="../img/1.jpg"
+                              alt="image profile"
+                              class="avatar-img rounded"
+                            />
+                          </div>
+                          <div class="u-text">
+                            <h4>Karthikeyan</h4>
+                            <p class="text-muted">Karthi@example.com</p>
+                            <a
+                              href="profile.html"
+                              class="btn btn-xs btn-secondary btn-sm"
+                              >View Profile</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Balance</a>
+                        <a class="dropdown-item" href="#">Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header">
+              <h3 class="fw-bold mb-3">Booking List</h3>
+              <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                  <a href="./admindash.html">
+                    <i class="icon-home"></i>
+                  </a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Room Book</a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Booking List</a>
+                </li>
+              </ul>
+            </div>
+
+
+            <!-- booking list -->
+
+            <div class="table-responsive">
+                <div class="container" style="max-height: 100%; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);" >
+                    <h5>Booking List</h5>
+                    <div class="button-container">
+                        <button class="new-button" id="openNewModal">New Booking</button>
+                    </div>
+                    <table id="bookingTable" class="display">
+                        <thead>
+                            <tr>
+                                <th>NAME</th>
+                                <th>ROOM TYPE</th>
+                                <th>CHECK IN</th>
+                                <th>CHECK OUT</th>
+                                <th>PAID AMOUNT</th>
+                                <th>DUE AMOUNT</th>
+                                <th>PAYMENT STATUS</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookingTableBody">
+                            <tr data-id="1">
+                                <td>Karthi</td>
+                                <td>Deluxe</td>
+                                <td>2024-09-01</td>
+                                <td>2024-09-05</td>
+                                <td>5000</td>
+                                <td>0</td>
+                                <td><span class="badge success">Success</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="2">
+                                <td>Sreeni</td>
+                                <td>Queen</td>
+                                <td>2024-09-02</td>
+                                <td>2024-09-06</td>
+                                <td>4000</td>
+                                <td>50</td>
+                                <td><span class="badge pending">Pending</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="3">
+                                <td>Michael </td>
+                                <td>Studio</td>
+                                <td>2024-09-03</td>
+                                <td>2024-09-07</td>
+                                <td>3300</td>
+                                <td>1000</td>
+                                <td><span class="badge pending">Pending</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="4">
+                                <td>Avinash</td>
+                                <td>Junior Suite</td>
+                                <td>2024-09-04</td>
+                                <td>2024-09-08</td>
+                                <td>4600</td>
+                                <td>0</td>
+                                <td><span class="badge success">Success</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="5">
+                                <td>Michael </td>
+                                <td>Studio</td>
+                                <td>2024-09-03</td>
+                                <td>2024-09-07</td>
+                                <td>3300</td>
+                                <td>1000</td>
+                                <td><span class="badge pending">Pending</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="6">
+                                <td>    Arun </td>
+                                <td>Studio</td>
+                                <td>2024-09-03</td>
+                                <td>2024-09-07</td>
+                                <td>3300</td>
+                                <td>1000</td>
+                                <td><span class="badge pending">Pending</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="7">
+                                <td>Prem </td>
+                                <td>Studio</td>
+                                <td>2024-09-03</td>
+                                <td>2024-09-07</td>
+                                <td>3300</td>
+                                <td>1000</td>
+                                <td><span class="badge pending">Pending</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="8">
+                                <td>Vinoth</td>
+                                <td>Studio</td>
+                                <td>2024-09-03</td>
+                                <td>2024-09-07</td>
+                                <td>3300</td>
+                                <td>1000</td>
+                                <td><span class="badge pending">Pending</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- New Booking Modal -->
+                <div id="newBookingModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>New Booking</h5>
+                            <span class="modal-close" onclick="closeNewBookingModal()">&times;</span>
+                        </div>
+                        <form id="newBookingForm">
+                            <div class="form-group">
+                                <label for="customerName">Name</label>
+                                <input type="text" id="customerName" name="customerName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="roomType">Room Type</label>
+                                <select id="roomType" name="roomType" required>
+                                    <option value="">Select Room Type</option>
+                                    <option value="Deluxe">Deluxe</option>
+                                    <option value="Queen">Queen</option>
+                                    <option value="Studio">Studio</option>
+                                    <option value="Junior Suite">Junior Suite</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkIn">Check In</label>
+                                <input type="date" id="checkIn" name="checkIn" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkOut">Check Out</label>
+                                <input type="date" id="checkOut" name="checkOut" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="paidAmount">Paid Amount</label>
+                                <input type="number" id="paidAmount" name="paidAmount" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dueAmount">Due Amount</label>
+                                <input type="number" id="dueAmount" name="dueAmount" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="paymentStatus">Payment Status</label>
+                                <select id="paymentStatus" name="paymentStatus" required>
+                                    <option value="Success">Success</option>
+                                    <option value="Pending">Pending</option>
+                                </select>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" value="Save Booking">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Edit Booking Modal -->
+                <div id="editBookingModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Edit Booking</h5>
+                            <span class="modal-close" onclick="closeEditBookingModal()">&times;</span>
+                        </div>
+                        <form id="editBookingForm">
+                            <input type="hidden" id="editBookingId">
+                            <div class="form-group">
+                                <label for="editCustomerName">Name</label>
+                                <input type="text" id="editCustomerName" name="customerName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="editRoomType">Room Type</label>
+                                <select id="editRoomType" name="roomType" required>
+                                    <option value="">Select Room Type</option>
+                                    <option value="Deluxe">Deluxe</option>
+                                    <option value="Queen">Queen</option>
+                                    <option value="Studio">Studio</option>
+                                    <option value="Junior Suite">Junior Suite</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="editCheckIn">Check In</label>
+                                <input type="date" id="editCheckIn" name="checkIn" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="editCheckOut">Check Out</label>
+                                <input type="date" id="editCheckOut" name="checkOut" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="editPaidAmount">Paid Amount</label>
+                                <input type="number" id="editPaidAmount" name="paidAmount" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="editDueAmount">Due Amount</label>
+                                <input type="number" id="editDueAmount" name="dueAmount" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="editPaymentStatus">Payment Status</label>
+                                <select id="editPaymentStatus" name="paymentStatus" required>
+                                    <option value="Success">Success</option>
+                                    <option value="Pending">Pending</option>
+                                </select>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" value="Update Booking">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#bookingTable').DataTable();
+                
+                        $('#openNewModal').on('click', function() {
+                            document.getElementById('newBookingModal').style.display = 'block';
+                        });
+                
+                        $('#newBookingForm').on('submit', function(event) {
+                            event.preventDefault();
+                            // Handle new booking submission
+                        });
+                
+                        $('#editBookingForm').on('submit', function(event) {
+                            event.preventDefault();
+                            // Handle booking update submission
+                        });
+                    });
+                
+                    function openNewBookingModal() {
+                        document.getElementById('newBookingModal').style.display = 'block';
+                    }
+                
+                    function closeNewBookingModal() {
+                        document.getElementById('newBookingModal').style.display = 'none';
+                    }
+                
+                    function openEditModal(button) {
+                        // Extract booking data and populate the edit modal fields
+                        var row = $(button).closest('tr');
+                        var id = row.data('id');
+                        var name = row.find('td').eq(0).text();
+                        var roomType = row.find('td').eq(1).text();
+                        var checkIn = row.find('td').eq(2).text();
+                        var checkOut = row.find('td').eq(3).text();
+                        var paidAmount = row.find('td').eq(4).text();
+                        var dueAmount = row.find('td').eq(5).text();
+                        var paymentStatus = row.find('td').eq(6).text();
+                        
+                        $('#editBookingId').val(id);
+                        $('#editCustomerName').val(name);
+                        $('#editRoomType').val(roomType);
+                        $('#editCheckIn').val(checkIn);
+                        $('#editCheckOut').val(checkOut);
+                        $('#editPaidAmount').val(paidAmount);
+                        $('#editDueAmount').val(dueAmount);
+                        $('#editPaymentStatus').val(paymentStatus);
+                
+                        document.getElementById('editBookingModal').style.display = 'block';
+                    }
+                
+                    function closeEditBookingModal() {
+                        document.getElementById('editBookingModal').style.display = 'none';
+                    }
+                
+                    function deleteBooking(button) {
+                        // Handle booking deletion
+                        var row = $(button).closest('tr');
+                        row.remove();
+                    }
+                    $(document).ready(function() {
+                        $('#bookingTable').DataTable();
+                
+                        $('#openNewModal').on('click', function() {
+                            openNewBookingModal();
+                        });
+                
+                        $('#newBookingForm').on('submit', function(event) {
+                            event.preventDefault();
+                
+                            // Collect form data
+                            var formData = {
+                                customerName: $('#customerName').val(),
+                                roomType: $('#roomType').val(),
+                                checkIn: $('#checkIn').val(),
+                                checkOut: $('#checkOut').val(),
+                                paidAmount: $('#paidAmount').val(),
+                                dueAmount: $('#dueAmount').val(),
+                                paymentStatus: $('#paymentStatus').val()
+                            };
+                
+                            // Add the new booking to the table
+                            var newRow = `<tr data-id="${Date.now()}">
+                                <td>${formData.customerName}</td>
+                                <td>${formData.roomType}</td>
+                                <td>${formData.checkIn}</td>
+                                <td>${formData.checkOut}</td>
+                                <td>${formData.paidAmount}</td>
+                                <td>${formData.dueAmount}</td>
+                                <td><span class="badge ${formData.paymentStatus.toLowerCase()}">${formData.paymentStatus}</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="edit-button" onclick="openEditModal(this)"><i class="fas fa-edit"></i></button> 
+                                        <button class="delete-button" onclick="deleteBooking(this)"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>`;
+                
+                            $('#bookingTableBody').append(newRow);
+                
+                            // Close the modal
+                            closeNewBookingModal();
+                
+                            // Optionally reset the form
+                            $('#newBookingForm')[0].reset();
+                        });
+                
+                        $('#editBookingForm').on('submit', function(event) {
+                            event.preventDefault();
+                
+                            // Collect updated form data
+                            var formData = {
+                                id: $('#editBookingId').val(),
+                                customerName: $('#editCustomerName').val(),
+                                roomType: $('#editRoomType').val(),
+                                checkIn: $('#editCheckIn').val(),
+                                checkOut: $('#editCheckOut').val(),
+                                paidAmount: $('#editPaidAmount').val(),
+                                dueAmount: $('#editDueAmount').val(),
+                                paymentStatus: $('#editPaymentStatus').val()
+                            };
+                
+                            // Update the booking in the table
+                            var row = $(`tr[data-id="${formData.id}"]`);
+                            row.find('td').eq(0).text(formData.customerName);
+                            row.find('td').eq(1).text(formData.roomType);
+                            row.find('td').eq(2).text(formData.checkIn);
+                            row.find('td').eq(3).text(formData.checkOut);
+                            row.find('td').eq(4).text(formData.paidAmount);
+                            row.find('td').eq(5).text(formData.dueAmount);
+                            row.find('td').eq(6).html(`<span class="badge ${formData.paymentStatus.toLowerCase()}">${formData.paymentStatus}</span>`);
+                
+                            // Close the modal
+                            closeEditBookingModal();
+                        });
+                    });
+                
+                    function openNewBookingModal() {
+                        document.getElementById('newBookingModal').style.display = 'block';
+                    }
+                
+                    function closeNewBookingModal() {
+                        document.getElementById('newBookingModal').style.display = 'none';
+                    }
+                
+                    function openEditModal(button) {
+                        var row = $(button).closest('tr');
+                        var id = row.data('id');
+                        var name = row.find('td').eq(0).text();
+                        var roomType = row.find('td').eq(1).text();
+                        var checkIn = row.find('td').eq(2).text();
+                        var checkOut = row.find('td').eq(3).text();
+                        var paidAmount = row.find('td').eq(4).text();
+                        var dueAmount = row.find('td').eq(5).text();
+                        var paymentStatus = row.find('td').eq(6).text();
+                
+                        $('#editBookingId').val(id);
+                        $('#editCustomerName').val(name);
+                        $('#editRoomType').val(roomType);
+                        $('#editCheckIn').val(checkIn);
+                        $('#editCheckOut').val(checkOut);
+                        $('#editPaidAmount').val(paidAmount);
+                        $('#editDueAmount').val(dueAmount);
+                        $('#editPaymentStatus').val(paymentStatus);
+                
+                        document.getElementById('editBookingModal').style.display = 'block';
+                    }
+                
+                    function closeEditBookingModal() {
+                        document.getElementById('editBookingModal').style.display = 'none';
+                    }
+                
+                    function deleteBooking(button) {
+                        $(button).closest('tr').remove();
+                    }
+                </script>
+
+                
+                
+
+            
+           
+           
+
+     
+    <!--   Core JS Files   -->
+    <script src="../js/core/jquery-3.7.1.min.js"></script>
+    <script src="../js/core/popper.min.js"></script>
+    <script src="../js/core/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+ <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!-- jQuery Scrollbar -->
+    <script src="../js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="../js/admin.min.js"></script>
+  </body>
+</html>

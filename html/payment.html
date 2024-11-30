@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Royal Hotel</title>
+    <link rel="icon" href="../img/logo-3.png" type="Image/icon ttype">
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"name="viewport"/>
+    <!-- Fonts and icons -->
+    <script src="../js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/userbootstrap.min.css">
+    <link rel="stylesheet" href="../css/kaiuser.css">
+    <link rel="stylesheet" href="../css/user.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="./userdash.html" class="logo">
+              <img
+                src="../img/logo-2.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+            <div class="sidebar-content">
+              <ul class="nav nav-secondary">
+                <li class="nav-item active">
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#dashboard"
+                    class="collapsed"
+                    aria-expanded="false">
+                    <i class="fas fa-home"></i>
+                    <p>Dashboard</p>
+                    <span class="caret"></span>
+                  </a>
+                  <div class="collapse" id="dashboard">
+                    <ul class="nav nav-collapse">
+                      <li>
+                        <a href="./userdash.html">
+                          <span class="sub-item">Dashboard 1</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-section">
+                  <span class="sidebar-mini-icon">
+                    <i class="fa fa-ellipsis-h"></i>
+                  </span>
+                  <h4 class="text-section">universal</h4>
+                </li>
+                <li class="nav-item">
+                  <a href="./my booking.html">
+                    <i class="fas fa-bed"></i> 
+                    <p>My Bookings</p>
+                  </a>
+                </li>
+              
+                <li class="nav-item">
+                  <a href="../html/new booking.html">
+                    <i class="fas fa-calendar-plus"></i>
+                    <p>New Booking</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./my event .html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>Event</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./my activity.html">
+                    <i class="fas fa-user-check"></i> 
+                    <p>Activity</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./payment.html">
+                    <i class="fas fa-credit-card"></i> 
+                    <p>Payments</p>
+                  </a>
+                </li>
+              
+                  <div class="collapse" id="submenu">
+                    <ul class="nav nav-collapse">
+                      <li>
+                        <a data-bs-toggle="collapse" href="#subnav1">
+                          <span class="sub-item">Level 1</span>
+                          <span class="caret"></span>
+                        </a>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+  
+        <div class="main-panel">
+          <div class="main-header">
+            <div class="main-header-logo">
+              <!-- Logo Header -->
+              <div class="logo-header" data-background-color="dark">
+                <a href="index.html" class="logo">
+                  <img
+                    src="assets/img/kaiadmin/logo_light.svg"
+                    alt="navbar brand"
+                    class="navbar-brand"
+                    height="20"
+                  />
+                </a>
+                <div class="nav-toggle">
+                  <button class="btn btn-toggle toggle-sidebar">
+                    <i class="gg-menu-right"></i>
+                  </button>
+                  <button class="btn btn-toggle sidenav-toggler">
+                    <i class="gg-menu-left"></i>
+                  </button>
+                </div>
+                <button class="topbar-toggler more">
+                  <i class="gg-more-vertical-alt"></i>
+                </button>
+              </div>
+              <!-- End Logo Header -->
+            </div>
+            <!-- Navbar Header -->
+            <nav
+              class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+            >
+              <div class="container-fluid">
+                <nav
+                  class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+                >
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button type="submit" class="btn btn-search pe-1">
+                        <i class="fa fa-search search-icon"></i>
+                      </button>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Search ..."
+                      class="form-control"
+                    />
+                  </div>
+                </nav>
+  
+                <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                  <li
+                    class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                    >
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-search animated fadeIn">
+                      <form class="navbar-left navbar-form nav-search">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            placeholder="Search ..."
+                            class="form-control"
+                          />
+                        </div>
+                      </form>
+                    </ul>
+                  </li>
+                 
+  
+                  <li class="nav-item topbar-user dropdown hidden-caret">
+                    <a
+                      class="dropdown-toggle profile-pic"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      aria-expanded="false"
+                    >
+                      <div class="avatar-sm">
+                        <img
+                          src="../img/2.jpg"
+                          alt="..."
+                          class="avatar-img rounded-circle"
+                        />
+                      </div>
+                      <span class="profile-username">
+                        <span class="op-7">Hi,</span>
+                        <span class="fw-bold">Karthikeyan</span>
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user animated fadeIn">
+                      <div class="dropdown-user-scroll scrollbar-outer">
+                        <li>
+                          <div class="user-box">
+                            <div class="avatar-lg">
+                              <img
+                              src="../img/2.jpg"
+                                alt="image profile"
+                                class="avatar-img rounded"
+                              />
+                            </div>
+                            <div class="u-text">
+                              <h4>Karthikeyan</h4>
+                              <p class="text-muted">Karthikeyan</p>
+                              <a
+                                href="./userprofile.html"
+                                class="btn btn-xs btn-secondary btn-sm"
+                                >View Profile</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">My Profile</a>
+                         
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="../index.html">Logout</a>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header">
+              <h3 class="fw-bold mb-3">Payment</h3>
+              <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                  <a href="./">
+                    <i class="icon-home"></i>
+                  </a>
+                </li>
+               
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Payment</a>
+                </li>
+              </ul>
+            </div>
+    </div>
+    
+
+             <!--Payment-->
+<!-- Payment -->
+<div class="container" style="justify-content: center; margin-top: -50px;">
+  <form id="checkoutForm" action="#" method="post" onsubmit="return validateForm();">
+    <div class="row">
+      <div class="col">
+        <h3 class="title">Billing Address</h3>
+        <div class="inputBox">
+          <span>Full Name :</span>
+          <input type="text" id="fullName" placeholder="Name">
+          <span class="error-message" id="fullNameError"></span>
+        </div>
+        <div class="inputBox">
+          <span>Email :</span>
+          <input type="email" id="email" placeholder="Name@example.com">
+          <span class="error-message" id="emailError"></span>
+        </div>
+        <div class="inputBox">
+          <span>Address :</span>
+          <input type="text" id="address" placeholder="Room - Street - Locality">
+          <span class="error-message" id="addressError"></span>
+        </div>
+        <div class="inputBox">
+          <span>City :</span>
+          <input type="text" id="city" placeholder="City Name">
+          <span class="error-message" id="cityError"></span>
+        </div>
+        <div class="flex">
+          <div class="inputBox">
+            <span>State :</span>
+            <input type="text" id="state" placeholder="State Name">
+            <span class="error-message" id="stateError"></span>
+          </div>
+          <div class="inputBox">
+            <span>Zip Code :</span>
+            <input type="text" id="zipCode" placeholder="Zip Code">
+            <span class="error-message" id="zipCodeError"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h3 class="title">Payment</h3>
+        <div class="inputBox">
+          <span>Cards Accepted :</span>
+          <img src="../img/card_img.png" alt="Accepted Cards">
+        </div>
+        <div class="inputBox">
+          <span>Name on Card :</span>
+          <input type="text" id="cardName" placeholder="Card Holder Name">
+          <span class="error-message" id="cardNameError"></span>
+        </div>
+        <div class="inputBox">
+          <span>Credit Card Number :</span>
+          <input type="number" id="cardNumber" placeholder="Card Number">
+          <span class="error-message" id="cardNumberError"></span>
+        </div>
+        <div class="inputBox">
+          <span>Exp Month :</span>
+          <input type="text" id="expMonth" placeholder="Month">
+          <span class="error-message" id="expMonthError"></span>
+        </div>
+        <div class="flex">
+          <div class="inputBox">
+            <span>Exp Year :</span>
+            <input type="number" id="expYear" placeholder="2024">
+            <span class="error-message" id="expYearError"></span>
+          </div>
+          <div class="inputBox">
+            <span>CVV :</span>
+            <input type="text" id="cvv" placeholder="****">
+            <span class="error-message" id="cvvError"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type="submit" value="Proceed to Checkout" class="submit-btn" style="background-color: #1e2b4a;">
+  </form>
+</div>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 class="modal-title">Payment Successful!</h2>
+    <p class="modal-message">Your payment has been processed successfully.</p>
+  </div>
+</div>
+
+<!-- Add the CSS for modal and error messages -->
+<style>
+  .error-message {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  input.invalid {
+    border-color: red;
+  }
+
+  /* Modal styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #f8f1e6; /* Light ivory background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #feaf40; /* Gold border */
+    border-radius: 8px; /* Rounded corners */
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+
+  .modal-title {
+    color: #6a0dad; /* Purple title */
+    font-family: 'Garamond', serif; /* Use Garamond font */
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+
+  .modal-message {
+    color: #333; /* Dark gray for message text */
+    font-family: 'Garamond', serif; /* Use Garamond font */
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .close {
+    color: #6a0dad; /* Purple close button */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #feaf40; /* Gold on hover */
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript for validation and modal functionality -->
+<script>
+  function validateForm() {
+    var isValid = true;
+
+    // Define the form fields and their error elements
+    var fullName = document.getElementById('fullName');
+    var fullNameError = document.getElementById('fullNameError');
+    var email = document.getElementById('email');
+    var emailError = document.getElementById('emailError');
+    var address = document.getElementById('address');
+    var addressError = document.getElementById('addressError');
+    var city = document.getElementById('city');
+    var cityError = document.getElementById('cityError');
+    var state = document.getElementById('state');
+    var stateError = document.getElementById('stateError');
+    var zipCode = document.getElementById('zipCode');
+    var zipCodeError = document.getElementById('zipCodeError');
+    var cardName = document.getElementById('cardName');
+    var cardNameError = document.getElementById('cardNameError');
+    var cardNumber = document.getElementById('cardNumber');
+    var cardNumberError = document.getElementById('cardNumberError');
+    var expMonth = document.getElementById('expMonth');
+    var expMonthError = document.getElementById('expMonthError');
+    var expYear = document.getElementById('expYear');
+    var expYearError = document.getElementById('expYearError');
+    var cvv = document.getElementById('cvv');
+    var cvvError = document.getElementById('cvvError');
+
+    // Helper function to validate fields and show errors
+    function validateField(field, errorElement, message) {
+      if (field.value.trim() === '') {
+        errorElement.textContent = message;
+        field.classList.add('invalid');
+        isValid = false;
+      } else {
+        errorElement.textContent = '';
+        field.classList.remove('invalid');
+      }
+    }
+
+    // Validate each field
+    validateField(fullName, fullNameError, 'Please enter your full name');
+    validateField(email, emailError, 'Please enter a valid email address');
+    validateField(address, addressError, 'Please enter your address');
+    validateField(city, cityError, 'Please enter your city');
+    validateField(state, stateError, 'Please enter your state');
+    validateField(zipCode, zipCodeError, 'Please enter your zip code');
+    validateField(cardName, cardNameError, 'Please enter the name on your card');
+    validateField(cardNumber, cardNumberError, 'Please enter a valid card number');
+    validateField(expMonth, expMonthError, 'Please enter the expiration month');
+    validateField(expYear, expYearError, 'Please enter the expiration year');
+    validateField(cvv, cvvError, 'Please enter your CVV');
+
+    // If the form is valid, show the success modal
+    if (isValid) {
+      document.getElementById('successModal').style.display = 'block'; // Show the modal
+      return false; // Prevent form submission
+    }
+
+    // Return if the form is valid or not
+    return false; // Prevent form submission if not valid
+  }
+
+  // Close the modal when the user clicks on <span> (x)
+  function closeModal() {
+    document.getElementById('successModal').style.display = 'none';
+  }
+
+  // Close the modal when the user clicks anywhere outside of the modal
+  window.onclick = function(event) {
+    var modal = document.getElementById('successModal');
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+    <!--   Core JS Files   -->
+       <!--   Core JS Files   -->
+       <script src="../js/core/jquery-3.7.1.min.js"></script>
+       <script src="../js/core/userpopper.min.js"></script>
+       <script src="../js/core/user bootstrap.min.js"></script>
+   
+       <!-- jQuery Scrollbar -->
+       <script src="../js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+   
+       <!-- Kaiadmin JS -->
+       <script src="../js/user.min.js"></script>
+   
+  </body>
+</html>

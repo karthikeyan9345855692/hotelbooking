@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Royal Hotel</title>
+    <link rel="icon" href="../img/logo-3.png" type="Image/icon ttype">
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"name="viewport"/>
+    <!-- Fonts and icons -->
+    <script src="../js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/adminbootstrap.min.css" />
+    <link rel="stylesheet" href="../css/plugins.min.css" />
+    <link rel="stylesheet" href="../css/kaiadmin.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="./admindash.html" class="logo">
+              <img
+                src="../img/logo-2.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="20"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item active">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false">
+                  <i class="fas fa-home"></i>
+                  <p>Dashboard</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="./admindash.html">
+                        <span class="sub-item">Dashboard 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">universal</h4>
+              </li>
+              <li class="nav-item">
+                <a href="../html/transaction.html">
+                  <i class="fas fa-exchange-alt"></i>
+                  <p>Transaction</p>
+                </a>
+              </li>
+             
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <i class="fas fa-hotel"></i>
+                  <p>Room Book</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="sidebarLayouts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../html/booking list.html">
+                        <span class="sub-item">Booking List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/room status.html">
+                        <span class="sub-item">Room Status</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#base">
+                  <i class="fas fa-crown"></i>
+                  <p>Room Facilities</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="base">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../html/facilities list.html">
+                        <span class="sub-item">Facilities List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/facilities details.html">
+                        <span class="sub-item">Facilities Details</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/room size.html">
+                        <span class="sub-item">Room Size</span>
+                      </a>
+                    </li>
+                  
+                  </ul>
+                </div>
+              </li>
+             
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#tables">
+                  <i class="fas fa-broom"></i>
+                  <p>House Keeping</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="tables">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../html/room cleaning.html">
+                        <span class="sub-item">Room Cleaning</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/housekeeping checklist.html">
+                        <span class="sub-item">Checklist</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/cleaning report.html">
+                        <span class="sub-item">Cleaning Report</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#charts">
+                  <i class='fas fa-car'></i>
+                  <p>Cab Facilities</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="charts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../html/cab list.html">
+                        <span class="sub-item">Cab List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../html/cab booking.html">
+                        <span class="sub-item">Cab Booking</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Reports</h4>
+              </li>
+              <li class="nav-item">
+                <a href="../html/booking report.html">
+                  <i class="fas fa-hotel"></i>
+                  <p>Booking Reports</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/purchase report.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p>Purchase Reports</p>
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#submenu">
+                  <i class="fas fa-bars"></i>
+                  <p>Menu Levels</p>
+                  <span class="caret"></span>
+                </a> -->
+                <div class="collapse" id="submenu">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a data-bs-toggle="collapse" href="#subnav1">
+                        <span class="sub-item">Level 1</span>
+                        <span class="caret"></span>
+                      </a>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+            <div class="container-fluid">
+              <nav
+                class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+              >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-search pe-1">
+                      <i class="fa fa-search search-icon"></i>
+                    </button>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search ..."
+                    class="form-control"
+                  />
+                </div>
+              </nav>
+
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li
+                  class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+                >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-search animated fadeIn">
+                    <form class="navbar-left navbar-form nav-search">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Search ..."
+                          class="form-control"
+                        />
+                      </div>
+                    </form>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="messageDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu messages-notif-box animated fadeIn"
+                    aria-labelledby="messageDropdown"
+                  >
+                    <li>
+                      <div
+                        class="dropdown-title d-flex justify-content-between align-items-center"
+                      >
+                        Messages
+                        <a href="#" class="small">Mark all as read</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="message-notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../img/jm_denis.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Ajith</span>
+                              <span class="block"> How are you ? </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../img/chadengle.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Vijay</span>
+                              <span class="block"> Ok, Thanks ! </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../img/mlane.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Siva</span>
+                              <span class="block">
+                                Ready for the meeting today...
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);"
+                        >See all messages<i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="notifDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-bell"></i>
+                    <span class="notification">4</span>
+                  </a>
+                  <ul
+                    class="dropdown-menu notif-box animated fadeIn"
+                    aria-labelledby="notifDropdown"
+                  >
+                    <li>
+                      <div class="dropdown-title">
+                        You have 4 new notification
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-icon notif-primary">
+                              <i class="fa fa-user-plus"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> New user registered </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-success">
+                              <i class="fa fa-comment"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block">
+                                Rahmad commented on Admin
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../img/profile2.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="block">
+                                Reza send messages to you
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-danger">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Farrah liked Admin </span>
+                              <span class="time">17 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);"
+                        >See all notifications<i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-layer-group"></i>
+                  </a>
+                  <div class="dropdown-menu quick-actions animated fadeIn">
+                    <div class="quick-actions-header">
+                      <span class="title mb-1">Quick Actions</span>
+                      <span class="subtitle op-7">Shortcuts</span>
+                    </div>
+                    <div class="quick-actions-scroll scrollbar-outer">
+                      <div class="quick-actions-items">
+                        <div class="row m-0">
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div class="avatar-item bg-danger rounded-circle">
+                                <i class="far fa-calendar-alt"></i>
+                              </div>
+                              <span class="text">Calendar</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-warning rounded-circle"
+                              >
+                                <i class="fas fa-map"></i>
+                              </div>
+                              <span class="text">Maps</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div class="avatar-item bg-info rounded-circle">
+                                <i class="fas fa-file-excel"></i>
+                              </div>
+                              <span class="text">Reports</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-success rounded-circle"
+                              >
+                                <i class="fas fa-envelope"></i>
+                              </div>
+                              <span class="text">Emails</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-primary rounded-circle"
+                              >
+                                <i class="fas fa-file-invoice-dollar"></i>
+                              </div>
+                              <span class="text">Invoice</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-secondary rounded-circle"
+                              >
+                                <i class="fas fa-credit-card"></i>
+                              </div>
+                              <span class="text">Payments</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a
+                    class="dropdown-toggle profile-pic"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <div class="avatar-sm">
+                      <img
+                        src="../img/1.jpg"
+                        alt="..."
+                        class="avatar-img rounded-circle"
+                      />
+                    </div>
+                    <span class="profile-username">
+                      <span class="op-7">Hi,</span>
+                      <span class="fw-bold">Karthikeyan</span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="avatar-lg">
+                            <img
+                              src="../img/1.jpg"
+                              alt="image profile"
+                              class="avatar-img rounded"
+                            />
+                          </div>
+                          <div class="u-text">
+                            <h4>Karthikeyan</h4>
+                            <p class="text-muted">Karthi@example.com</p>
+                            <a
+                              href="profile.html"
+                              class="btn btn-xs btn-secondary btn-sm"
+                              >View Profile</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Balance</a>
+                        <a class="dropdown-item" href="#">Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header">
+              <h3 class="fw-bold mb-3">Room Status</h3>
+              <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                  <a href="./admindash.html">
+                    <i class="icon-home"></i>
+                  </a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Room Book</a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Room Status</a>
+                </li>
+              </ul>
+            </div>
+
+
+            <!-- room status table -->
+
+            <div class="container" style="max-height: 100%; border-radius: 12px; box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);">
+                <h5>Room Status</h5>
+                <div class="table-controls">
+                    <!-- <label for="entries">Show
+                        <select id="entries" onchange="updateEntries()">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        entries
+                    </label> -->
+                    <div class="search-bar">
+                        <label for="search">Search:</label>
+                        <input type="text" id="search" onkeyup="filterTable()">
+                    </div>
+                    <button class="add-room-btn" onclick="openModal('add')">Add New</button>
+                </div>
+                <table id="roomStatusTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">Room Number</th>
+                            <th onclick="sortTable(1)">Room Type</th>
+                            <th onclick="sortTable(2)">Floor</th>
+                            <th onclick="sortTable(3)">Check Out</th>
+                            <th onclick="sortTable(4)">Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A-1101</td>
+                            <td>Deluxe</td>
+                            <td>First Floor</td>
+                            <td>12/04/2021</td>
+                            <td><span class="status checkin">Checkin</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A-1201</td>
+                            <td>Studio</td>
+                            <td>First Floor</td>
+                            <td>None</td>
+                            <td><span class="status available">Available</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B-2101</td>
+                            <td>Suite</td>
+                            <td>Second Floor</td>
+                            <td>15/04/2021</td>
+                            <td><span class="status checkin">Checkin</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>B-2201</td>
+                            <td>Deluxe</td>
+                            <td>Second Floor</td>
+                            <td>None</td>
+                            <td><span class="status available">Available</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C-3101</td>
+                            <td>Studio</td>
+                            <td>Third Floor</td>
+                            <td>20/04/2021</td>
+                            <td><span class="status checkin">Checkin</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C-3201</td>
+                            <td>Suite</td>
+                            <td>Third Floor</td>
+                            <td>None</td>
+                            <td><span class="status available">Available</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>D-4101</td>
+                            <td>Deluxe</td>
+                            <td>Fourth Floor</td>
+                            <td>22/04/2021</td>
+                            <td><span class="status checkin">Checkin</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>D-4201</td>
+                            <td>Studio</td>
+                            <td>Fourth Floor</td>
+                            <td>None</td>
+                            <td><span class="status available">Available</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>E-5101</td>
+                            <td>Suite</td>
+                            <td>Fifth Floor</td>
+                            <td>30/04/2021</td>
+                            <td><span class="status checkin">Checkin</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>E-5201</td>
+                            <td>Deluxe</td>
+                            <td>Fifth Floor</td>
+                            <td>None</td>
+                            <td><span class="status available">Available</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>F-6101</td>
+                            <td>Studio</td>
+                            <td>Sixth Floor</td>
+                            <td>02/05/2021</td>
+                            <td><span class="status checkin">Checkin</span></td>
+                            <td class="action-icons">
+                                <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <div class="table-footer">
+                    <span id="entriesInfo">Showing 1 to 10 of 10 entries</span> -->
+                    <div class="pagination">
+                        <button onclick="prevPage()" id="prevBtn" disabled>Previous</button>
+                        <span id="pageNumber">1</span>
+                        <button onclick="nextPage()" id="nextBtn">Next</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal Structure -->
+            <div id="roomModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">Room Details</div>
+                    <input type="text" id="modalRoomNumber" class="modal-input" placeholder="Room Number">
+                    <input type="text" id="modalRoomType" class="modal-input" placeholder="Room Type">
+                    <input type="text" id="modalFloor" class="modal-input" placeholder="Floor">
+                    <input type="text" id="modalCheckOut" class="modal-input" placeholder="Check Out">
+                    <input type="text" id="modalStatus" class="modal-input" placeholder="Status">
+                    <div class="modal-actions">
+                        <button class="save-btn" onclick="saveRoom()">Save</button>
+                        <button class="close-btn" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                let currentPage = 1;
+                let editingRow = null;
+                const rowsPerPage = 10;
+        
+                function sortTable(n) {
+                    const table = document.getElementById("roomStatusTable");
+                    let rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                    switching = true;
+                    dir = "asc";
+                    while (switching) {
+                        switching = false;
+                        rows = table.rows;
+                        for (i = 1; i < (rows.length - 1); i++) {
+                            shouldSwitch = false;
+                            x = rows[i].getElementsByTagName("TD")[n];
+                            y = rows[i + 1].getElementsByTagName("TD")[n];
+                            if (dir === "asc") {
+                                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                    shouldSwitch = true;
+                                    break;
+                                }
+                            } else if (dir === "desc") {
+                                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                    shouldSwitch = true;
+                                    break;
+                                }
+                            }
+                        }
+                        if (shouldSwitch) {
+                            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                            switching = true;
+                            switchcount++;
+                        } else {
+                            if (switchcount === 0 && dir === "asc") {
+                                dir = "desc";
+                                switching = true;
+                            }
+                        }
+                    }
+                }
+        
+                function updateEntries() {
+                    const select = document.getElementById("entries");
+                    const entries = select.value;
+                    document.getElementById("entriesInfo").innerText = `Showing 1 to ${entries} of ${entries} entries`;
+                }
+        
+                function filterTable() {
+                    const input = document.getElementById("search");
+                    const filter = input.value.toLowerCase();
+                    const table = document.getElementById("roomStatusTable");
+                    const trs = table.getElementsByTagName("tr");
+        
+                    for (let i = 1; i < trs.length; i++) {
+                        const tds = trs[i].getElementsByTagName("td");
+                        let showRow = false;
+                        for (let j = 0; j < tds.length; j++) {
+                            if (tds[j].textContent.toLowerCase().indexOf(filter) > -1) {
+                                showRow = true;
+                                break;
+                            }
+                        }
+                        trs[i].style.display = showRow ? "" : "none";
+                    }
+                }
+        
+                function openModal(action, el) {
+                    const modal = document.getElementById("roomModal");
+                    if (action === 'edit') {
+                        editingRow = el.closest('tr');
+                        document.getElementById("modalRoomNumber").value = editingRow.children[0].textContent;
+                        document.getElementById("modalRoomType").value = editingRow.children[1].textContent;
+                        document.getElementById("modalFloor").value = editingRow.children[2].textContent;
+                        document.getElementById("modalCheckOut").value = editingRow.children[3].textContent;
+                        document.getElementById("modalStatus").value = editingRow.children[4].textContent;
+                        document.querySelector('.modal-header').textContent = 'Edit Room Details';
+                    } else {
+                        document.getElementById("modalRoomNumber").value = '';
+                        document.getElementById("modalRoomType").value = '';
+                        document.getElementById("modalFloor").value = '';
+                        document.getElementById("modalCheckOut").value = '';
+                        document.getElementById("modalStatus").value = '';
+                        document.querySelector('.modal-header').textContent = 'Add New Room';
+                    }
+                    modal.style.display = "block";
+                }
+        
+                function closeModal() {
+                    document.getElementById("roomModal").style.display = "none";
+                }
+        
+                function saveRoom() {
+                    const roomNumber = document.getElementById("modalRoomNumber").value;
+                    const roomType = document.getElementById("modalRoomType").value;
+                    const floor = document.getElementById("modalFloor").value;
+                    const checkOut = document.getElementById("modalCheckOut").value;
+                    const status = document.getElementById("modalStatus").value;
+        
+                    if (editingRow) {
+                        editingRow.children[0].textContent = roomNumber;
+                        editingRow.children[1].textContent = roomType;
+                        editingRow.children[2].textContent = floor;
+                        editingRow.children[3].textContent = checkOut;
+                        editingRow.children[4].innerHTML = `<span class="status ${status.toLowerCase()}">${status}</span>`;
+                        editingRow = null;
+                    } else {
+                        const table = document.getElementById("roomStatusTable").getElementsByTagName('tbody')[0];
+                        const newRow = table.insertRow();
+                        newRow.insertCell(0).textContent = roomNumber;
+                        newRow.insertCell(1).textContent = roomType;
+                        newRow.insertCell(2).textContent = floor;
+                        newRow.insertCell(3).textContent = checkOut;
+                        newRow.insertCell(4).innerHTML = `<span class="status ${status.toLowerCase()}">${status}</span>`;
+                        newRow.insertCell(5).innerHTML = `
+                            <div class="action-icons">
+                                 <img src="../img/edit.png" alt="Edit" onclick="openModal('edit', this)">
+                                <img src="../img/trash.png" alt="Delete" onclick="deleteRoom(this)">
+                            </div>`;
+                    }
+        
+                    closeModal();
+                }
+        
+                function deleteRoom(el) {
+                    const row = el.closest('tr');
+                    row.remove();
+                }
+        
+                function prevPage() {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        // Logic to update table content based on currentPage
+                        updateTable();
+                    }
+                }
+        
+                function nextPage() {
+                    currentPage++;
+                    // Logic to update table content based on currentPage
+                    updateTable();
+                }
+        
+                function updateTable() {
+                    // Logic to update table content based on currentPage
+                    console.log("Update table for page", currentPage);
+                }
+            </script>
+
+           
+                
+                
+
+            
+           
+           
+
+     
+    <!--   Core JS Files   -->
+    <script src="../js/core/jquery-3.7.1.min.js"></script>
+    <script src="../js/core/popper.min.js"></script>
+    <script src="../js/core/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+ <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!-- jQuery Scrollbar -->
+    <script src="../js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="../js/admin.min.js"></script>
+  </body>
+</html>
